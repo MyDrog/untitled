@@ -22,7 +22,7 @@ def res(data):
 def get_chat_id(update):
     chat_id = update['message']['chat']['id']
     return chat_id
-def sendmessage(chat,text):
+def sendmessage(chat, text):
     params = {'chat_id':chat,'text':text}
     r = requests.post(url+'sendMessage',data=params)
     return r

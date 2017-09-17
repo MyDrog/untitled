@@ -29,9 +29,9 @@ def sendmessage(chat, text):
 
 
 def main():
-    for x in res(inf(url)):
-        ids.add(x['message']['chat']['id'])
     while True:
+        for x in res(inf(url)):
+            ids.add(x['message']['chat']['id'])
         for id in ids:
             sendmessage(id, 'НАВАЛЬНЫЙ 20!8')
             sleep(0.001)
